@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=630></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/my.loader.js";
+      var loaderUrl = buildUrl + "/KLG_Games.loader.js";
       var config = {
-        dataUrl: buildUrl + "/my.data",
-        frameworkUrl: buildUrl + "/my.framework.js",
-        codeUrl: buildUrl + "/my.wasm",
+        dataUrl: buildUrl + "/KLG_Games.data.gz",
+        frameworkUrl: buildUrl + "/KLG_Games.framework.js.gz",
+        codeUrl: buildUrl + "/KLG_Games.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KLG Games",
         productName: "Snake Island",
@@ -94,7 +94,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "630px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
